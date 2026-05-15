@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Saifullahi</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Head back to Saifullahi's portfolio.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+  <meta property="og:title" content="Saifullahi A | Design Portfolio">
+<meta property="og:description" content="Multidisciplinary designer and frontend developer.">
+<meta property="og:image" content="images/og-preview.png">
+<meta property="og:url" content="https://yoursite.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Manrope:wght@400;500;600&family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .not-found-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .not-found-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 32px 80px;
+    }
+
+    .not-found-inner {
+      max-width: 640px;
+      width: 100%;
+    }
+
+    .not-found-code {
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(96px, 18vw, 160px);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: var(--surface-muted);
+      margin: 0 0 8px;
+      /* Layered effect: outline + fill */
+      -webkit-text-stroke: 2px var(--border);
+      user-select: none;
+    }
+
+    .not-found-inner .eyebrow {
+      margin-bottom: 20px;
+    }
+
+    .not-found-inner h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      margin-bottom: 20px;
+    }
+
+    .not-found-inner .lead {
+      margin-top: 0;
+      margin-bottom: 48px;
+      font-size: 18px;
+    }
+
+    .not-found-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .not-found-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+      margin: 56px 0;
+    }
+
+    .not-found-pages {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .not-found-page-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+    }
+
+    .not-found-page-link:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--surface-soft);
+      transform: translateY(-2px);
+    }
+
+    .not-found-page-link .material-symbols-outlined {
+      font-size: 18px;
+    }
+
+    @media (max-width: 640px) {
+      .not-found-code {
+        font-size: 96px;
+      }
+
+      .not-found-pages {
+        grid-template-columns: 1fr;
+      }
+
+      .not-found-links .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="not-found-page">
+  <nav class="topbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Saifullahi</a>
+      <div class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="nav-button" href="contact.html">Let's Talk</a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="not-found-main">
+    <div class="not-found-inner">
+      <p class="not-found-code" aria-hidden="true">404</p>
+      <p class="eyebrow">Page Not Found</p>
+      <h1>This page doesn't exist.</h1>
+      <p class="lead">The link may be broken, the page may have moved, or you may have typed something slightly off. Let's get you back on track.</p>
+
+      <div class="not-found-links">
+        <a class="button button-dark" href="index.html">
+          <span class="material-symbols-outlined" style="margin-right:8px;font-size:18px;">home</span>
+          Back to Home
+        </a>
+        <a class="button button-light" href="work.html">View My Work</a>
+      </div>
+
+      <div class="not-found-divider"></div>
+
+      <div class="not-found-pages">
+        <a class="not-found-page-link" href="work.html">
+          Work <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+        <a class="not-found-page-link" href="about.html">
+          About <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+        <a class="not-found-page-link" href="contact.html">
+          Contact <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="index.html">Saifullahi</a>
+        <p>Design. Build. Elevate.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/saifullahi" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/saifullahi" target="_blank" rel="noopener">GitHub</a>
+        <a href="work.html">Work</a>
+        <a href="mailto:saifullahiabdullahi900@gmail.com">Email</a>
+        <a href="https://wa.me/2348036284713?text=Hello%20Saifullahi%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p>&copy; <span data-current-year>2026</span> Saifullahi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+</body>
+</html>

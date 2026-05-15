@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Saifullahi</title>
+  <meta name="description" content="Meet Saifullahi — a multidisciplinary designer and frontend developer with experience building polished, responsive digital products."><meta property="og:title" content="Saifullahi A | Design Portfolio">
+<meta property="og:description" content="Multidisciplinary designer and frontend developer.">
+<meta property="og:image" content="images/og-preview.png">
+<meta property="og:url" content="https://yoursite.com">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Manrope:wght@400;500;600&family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ── Tools / Stack section ── */
+    .tools-section {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 40px 56px;
+      margin-top: 56px;
+    }
+
+    .tool-group h3 {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tool-list {
+      display: grid;
+      gap: 12px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .tool-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .tool-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 900px) {
+      .tools-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Saifullahi</a>
+      <div class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="work.html">Work</a>
+        <a class="active" href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="nav-button" href="contact.html">Let's Talk</a>
+      <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Designing Since 2018</p>
+        <h1>Crafting Digital Experiences with Purpose.</h1>
+      </div>
+    </section>
+
+    <section class="section about-intro">
+      <div class="container two-column">
+        <div class="portrait-frame">
+          <img src="images/saif.png" alt="Designer portrait in a studio">
+        </div>
+        <div>
+          <h2>About Me</h2>
+          <div class="prose-large">
+            <p>I am a multidisciplinary designer and frontend developer focused on building polished digital products at the intersection of aesthetics, usability, and clean implementation.</p>
+            <p>Over the years, I have helped shape websites, product interfaces, and brand systems that turn complex ideas into clear user experiences. My approach is rooted in the belief that great design is not just how something looks, but how confidently it helps people move forward.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section philosophy">
+      <div class="container split-quote">
+        <div>
+          <h2>My Philosophy</h2>
+        </div>
+        <div class="quote-panel">
+          <p class="statement">"Bridging the gap between design and development is not just about technical skill; it is about a shared language of performance."</p>
+          <p>I believe the most successful digital experiences are born from a thoughtful integration of form and function. By understanding the constraints of code during the creative process, I create designs that are beautiful, scalable, and technically sound.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container centered">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Core Expertise</h2>
+        <div class="card-grid">
+          <article class="service-card">
+            <span class="material-symbols-outlined card-icon">architecture</span>
+            <h3>Product Design</h3>
+            <p>End-to-end design systems and interface architecture focused on user-centric flows and visual harmony.</p>
+          </article>
+          <article class="service-card">
+            <span class="material-symbols-outlined card-icon">code</span>
+            <h3>Frontend Dev</h3>
+            <p>Building responsive, accessible, and performant web pages using simple HTML, CSS, and clean interaction patterns.</p>
+          </article>
+          <article class="service-card">
+            <span class="material-symbols-outlined card-icon">monitoring</span>
+            <h3>UX Strategy</h3>
+            <p>Data-informed strategy to optimize conversion paths and ensure digital products meet business objectives.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Tools & Stack ── -->
+    <section class="section tools-section">
+      <div class="container">
+        <div class="centered">
+          <p class="eyebrow">The Toolkit</p>
+          <h2>Tools I Work With.</h2>
+        </div>
+        <div class="tools-grid">
+
+          <div class="tool-group">
+            <h3>Design</h3>
+            <ul class="tool-list">
+              <li><span class="tool-dot"></span>Figma</li>
+              <li><span class="tool-dot"></span>Adobe Photoshop</li>
+              <li><span class="tool-dot"></span>Adobe Illustrator</li>
+            </ul>
+          </div>
+
+          <div class="tool-group">
+            <h3>Frontend</h3>
+            <ul class="tool-list">
+              <li><span class="tool-dot"></span>HTML5</li>
+              <li><span class="tool-dot"></span>CSS3</li>
+              <li><span class="tool-dot"></span>JavaScript (Vanilla)</li>
+            </ul>
+          </div>
+
+          <div class="tool-group">
+            <h3>Dev Environment</h3>
+            <ul class="tool-list">
+              <li><span class="tool-dot"></span>VS Code</li>
+              <li><span class="tool-dot"></span>Git &amp; GitHub</li>
+              <li><span class="tool-dot"></span>Chrome DevTools</li>
+            </ul>
+          </div>
+
+          <div class="tool-group">
+            <h3>Workflow</h3>
+            <ul class="tool-list">
+              <li><span class="tool-dot"></span>Responsive Design</li>
+              <li><span class="tool-dot"></span>CSS Grid &amp; Flexbox</li>
+              <li><span class="tool-dot"></span>Performance Optimisation</li>
+            </ul>
+          </div>
+
+          <div class="tool-group">
+            <h3>Delivery</h3>
+            <ul class="tool-list">
+              <li><span class="tool-dot"></span>GitHub Pages</li>
+              <li><span class="tool-dot"></span>Netlify</li>
+              <li><span class="tool-dot"></span>Vercel</li>
+            </ul>
+          </div>
+
+          <div class="tool-group">
+            <h3>Extras</h3>
+            <ul class="tool-list">
+              <li><span class="tool-dot"></span>Google Fonts</li>
+              <li><span class="tool-dot"></span>Material Icons</li>
+              <li><span class="tool-dot"></span>Web Accessibility (WCAG)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-band">
+        <div>
+          <h2>Let's Work Together</h2>
+          <p>Ready to elevate your digital presence? I am currently accepting select projects for ambitious teams and founders.</p>
+        </div>
+        <a class="button button-light inverse-button" href="contact.html">Start a Project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="index.html">Saifullahi</a>
+        <p>Design. Build. Elevate.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/saifullahi" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/saifullahi" target="_blank" rel="noopener">GitHub</a>
+        <a href="work.html">Work</a>
+        <a href="mailto:saifullahiabdullahi900@gmail.com">Email</a>
+        <a href="https://wa.me/2348036284713?text=Hello%20Saifullahi%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p>&copy; <span data-current-year>2026</span> Saifullahi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+</body>
+</html>
