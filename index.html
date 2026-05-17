@@ -7,10 +7,10 @@
   <title>Saifullahi A | Design Portfolio</title>
   <meta name="description"
     content="Saifullahi is a multidisciplinary designer and frontend developer building polished, responsive websites and product experiences for ambitious teams.">
-    <meta property="og:title" content="Saifullahi A | Design Portfolio">
-<meta property="og:description" content="Multidisciplinary designer and frontend developer.">
-<meta property="og:image" content="images/og-preview.png">
-<meta property="og:url" content="https://yoursite.com">
+  <meta property="og:title" content="Saifullahi A | Design Portfolio">
+  <meta property="og:description" content="Multidisciplinary designer and frontend developer.">
+  <meta property="og:image" content="images/og-preview.png">
+  <meta property="og:url" content="https://yoursite.com">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
 
@@ -21,8 +21,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+
   <nav class="topbar">
     <div class="nav-inner">
       <a class="brand" href="index.html">Saifullahi</a>
@@ -31,6 +31,7 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </div>
+
       <a class="nav-button" href="contact.html">Let's Talk</a>
       <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-navigation">
         <span></span><span></span><span></span>
@@ -62,15 +63,17 @@
     <section class="section soft-section" id="about">
       <div class="container two-column">
         <div class="portrait-frame">
-          <img
-            src="images/saif2.png"
-            alt="Lead designer in a minimalist studio">
+          <picture>
+            <source srcset="images/saif2.webp" type="image/webp">
+            <img src="images/saif2.png" alt="Lead designer in a minimalist studio" loading="lazy" width="1024"
+              height="1536">
+          </picture>
         </div>
         <div>
           <p class="eyebrow">The Ethos</p>
           <h2>Craft Meets Intentionality.</h2>
           <p>I specialize in creating clarity out of complexity. My approach is rooted in the belief that every pixel
-            should serve a purpose, and every interaction should drive conversion.</p>
+            should serve a purpose, and every interaction should drive conversion .</p>
           <ul class="check-list">
             <li><span class="material-symbols-outlined">check_circle</span>Strategic design focused on measurable
               business outcomes.</li>
@@ -121,14 +124,22 @@
         <div class="project-grid">
           <a class="project-card" href="work.html#aura-timepieces">
             <div class="project-image">
-              <img src="images/image 1.png" alt="E-commerce interface displayed on a monitor">
+              <picture>
+                <source srcset="images/image 1.webp" type="image/webp">
+                <img src="images/image 1.png" alt="E-commerce interface displayed on a monitor" loading="lazy"
+                  width="736" height="460">
+              </picture>
             </div>
             <div class="tag-row"><span>E-Commerce</span><span>UX Strategy</span></div>
             <h3>E-Commerce Redesign</h3>
           </a>
           <a class="project-card" href="work.html#vanguard-studios">
             <div class="project-image">
-              <img src="images/image copy 6.png" alt="Creative agency website on a display">
+              <picture>
+                <source srcset="images/image copy 6.webp" type="image/webp">
+                <img src="images/image copy 6.png" alt="Creative agency website on a display" loading="lazy"
+                  width="1024" height="1024">
+              </picture>
             </div>
             <div class="tag-row"><span>Branding</span><span>Web Design</span></div>
             <h3>Creative Agency Website</h3>
